@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime BitCoin Tester</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container-fluid">
+                <div class="brand-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <ul class="middle_nav">
+                    <li>
+                        <button class="dropdown-toggle" id="langView" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Activity</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" data-value="BTC">BTC</a>
+                            <a class="dropdown-item" href="#" data-value="LTC">LTC</a>
+                            <a class="dropdown-item" href="#" data-value="NMC">NMC</a>
+                            <a class="dropdown-item" href="#" data-value="PPC">PPC</a>
+                            <a class="dropdown-item" href="#" data-value="XPR">XPR</a>
+                            <a class="dropdown-item" href="#" data-value="XPM">XPM</a>
+                            <a class="dropdown-item" href="#" data-value="AUR">AUR</a>
+                            <a class="dropdown-item" href="#" data-value="ETC">ETC</a>
+                            <a class="dropdown-item" href="#" data-value="XLM">XLM</a>
+                            <a class="dropdown-item" href="#" data-value="NEO">NEO</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-toggle" id="langView" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Tool Guide</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" data-value="BTC">BTC</a>
+                            <a class="dropdown-item" href="#" data-value="LTC">LTC</a>
+                            <a class="dropdown-item" href="#" data-value="NMC">NMC</a>
+                            <a class="dropdown-item" href="#" data-value="PPC">PPC</a>
+                            <a class="dropdown-item" href="#" data-value="XPR">XPR</a>
+                            <a class="dropdown-item" href="#" data-value="XPM">XPM</a>
+                            <a class="dropdown-item" href="#" data-value="AUR">AUR</a>
+                            <a class="dropdown-item" href="#" data-value="ETC">ETC</a>
+                            <a class="dropdown-item" href="#" data-value="XLM">XLM</a>
+                            <a class="dropdown-item" href="#" data-value="NEO">NEO</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right_nav">
+                    <li>
+                        <div class="search-wrap">
+                            <i class="fa fa-search"></i>
+                            <input type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <a href="#" class="noti_btn"><i class="fa fa-bell"></i></a>
+                            </li>
+                            <li class="user_dropdown">
+                                <a class="dropdown-toggle" id="langView" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"><img src="img/user.png" /></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="toolguide">Option 1</a>
+                                    <a class="dropdown-item" href="#" data-value="toolguide">Option 2</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <ul>
+                <li class="left_label"><i class="fa fa-cogs"></i> Tools</li>
+                <li><a href="#"><i class="fa fa-pie-chart"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-file"></i> Backlog Remover</a></li>
+                <li><a href="#"><i class="fa fa-star"></i> Rank up</a></li>
+                <li><a href="#"><i class="fa fa-fighter-jet"></i> Speed up</a></li>
+                <li><a href="#"><i class="fa fa-check-circle-o"></i> Revision</a></li>
+                <li><a href="#"><i class="fa fa-repeat"></i> Test Creator</a></li>
+                <li><a href="#" class="active"><i class="fa fa-indent"></i> Assignment Creator</a></li>
+                <li><a href="#"><i class="fa fa-file-code-o"></i> Study Material</a></li>
+                <li><a href="#"><i class="fa fa-graduation-cap"></i> Formula Sheet</a></li>
+                <li><a href="#"><i class="fa fa-flask"></i> Formula Sheet</a></li>
+            </ul>
+        </aside>
+
+        <div class="main-content">
+            <ul class="chart_nav">
+                <li class="commodity-type">
+                    <button class="dropdown-toggle" id="currencyA" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">NMC</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" data-value="BTC">BTC</a>
+                        <a class="dropdown-item" href="#" data-value="LTC">LTC</a>
+                        <a class="dropdown-item" href="#" data-value="NMC">NMC</a>
+                        <a class="dropdown-item" href="#" data-value="PPC">PPC</a>
+                        <a class="dropdown-item" href="#" data-value="XPR">XPR</a>
+                        <a class="dropdown-item" href="#" data-value="XPM">XPM</a>
+                        <a class="dropdown-item" href="#" data-value="AUR">AUR</a>
+                        <a class="dropdown-item" href="#" data-value="ETC">ETC</a>
+                        <a class="dropdown-item" href="#" data-value="XLM">XLM</a>
+                        <a class="dropdown-item" href="#" data-value="NEO">NEO</a>
+                    </div>
+                </li>
+                <li class="commodity-type">
+                    <button class="dropdown-toggle" id="currencyB" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">LTC</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" data-value="BTC">BTC</a>
+                        <a class="dropdown-item" href="#" data-value="LTC">LTC</a>
+                        <a class="dropdown-item" href="#" data-value="NMC">NMC</a>
+                        <a class="dropdown-item" href="#" data-value="PPC">PPC</a>
+                        <a class="dropdown-item" href="#" data-value="XPR">XPR</a>
+                        <a class="dropdown-item" href="#" data-value="XPM">XPM</a>
+                        <a class="dropdown-item" href="#" data-value="AUR">AUR</a>
+                        <a class="dropdown-item" href="#" data-value="ETC">ETC</a>
+                        <a class="dropdown-item" href="#" data-value="XLM">XLM</a>
+                        <a class="dropdown-item" href="#" data-value="NEO">NEO</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="chartContainer1" style="width: 100%; height: 450px;display: inline-block;"></div><br />
+        </div>
+
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/canvasjs.min.js"></script>
+    <script>
+        let currencyAPrice;
+        let currencyBPrice;
+        let currOneArray = []
+        let currTwoArray = []
+        let xVal = currOneArray.length + 1;
+        let yVal;
+        let yValr;
+        let currAName = $('#currencyA').text();
+        let currBName = $('#currencyB').text();
+        let interval;
+
+        // calling fetch api function on window load
+        $(window).on('load', function () {
+            setDatafromApi(currAName, currBName);
+        })
+
+        // fetching api data
+        const setDatafromApi = (one, two) => {
+            let url = "https://api.nomics.com/v1/currencies/ticker?key=327c04391b7f7947e37d8f6883ddaf9d&ids=" +
+                one + "," + two;;
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function (result) {
+                    currencyAPrice = parseInt($(result)[0].price)
+                    currencyBPrice = parseInt($(result)[1].price)
+                    if (!interval) {
+                        interval = setInterval(function () {
+                            updateChart();
+                            Chart()
+                        }, 1000);
+
+                    } else {
+                        updateChart();
+                        Chart();
+                    }
+
+                },
+                dataType: 'JSON'
+            });
+        }
+
+        // updates chart axis
+        const updateChart = () => {
+            let valueOne = currencyAPrice + Math.round(5 + Math.random() * (-50 - 50));
+            let valueTwo = currencyBPrice + Math.round(5 + Math.random() * (-50 - 50));
+            console.log("Curr", currOneArray, currTwoArray)
+            currencyAPrice = valueOne;
+            currencyBPrice = valueTwo;
+
+            yVal = parseInt(currencyAPrice);
+            yValr = parseInt(currencyBPrice);
+            currOneArray.push({
+                x: xVal,
+                y: yVal
+            });
+            currTwoArray.push({
+                x: xVal,
+                y: yValr
+            });
+            xVal++;
+            if (currOneArray.length > 10) {
+                currOneArray.shift();
+            }
+            if (currTwoArray.length > 10) {
+                currTwoArray.shift();
+            }
+        }
+
+        // on change event on dropdown
+        $('.commodity-type').find('a.dropdown-item').on('click', function (e) {
+            const thisVal = $(this).attr('data-value');
+            $(this).parents('.commodity-type').find('.dropdown-toggle').text(thisVal)
+            const getId = $(e.target).parents('.commodity-type').find('.dropdown-toggle').attr('id');
+            const getValue = $(e.target).parents('.commodity-type').find('.dropdown-toggle').text();
+            if (getId === "currencyA") {
+                if (getId === currAName) {
+                    alert("Currency A and Currency B can't be same.");
+                } else {
+                    currAName = getValue;
+                    setDatafromApi(currAName, currBName);
+                    updateChart();
+                    xVal = 0;
+                    currOneArray = [];
+                    currTwoArray = [];
+                    Chart();
+                }
+            } else if (getId === "currencyB") {
+                if (getId === currAName) {
+                    alert("Currency A and Currency B can't be same.");
+                } else {
+                    currBName = getValue;
+                    setDatafromApi(currAName, currBName);
+                    updateChart();
+                    xVal = 0;
+                    currOneArray = [];
+                    currTwoArray = [];
+                    Chart();
+                }
+            }
+        })
+
+        // rendering chart
+        function Chart() {
+            let lineChart = new CanvasJS.Chart("chartContainer1", {
+                legend: {
+                    verticalAlign: "top",
+                    horizontalAlign: "right"
+                },
+                data: [{
+                        type: "spline",
+                        name: currAName,
+                        showInLegend: true,
+                        dataPoints: currOneArray
+                    },
+                    {
+                        type: "spline",
+                        name: currBName, 
+                        showInLegend: true,
+                        dataPoints: currTwoArray
+                    }
+                ]
+            });
+            lineChart.render()
+        }
+    </script>
+</body>
+
+</html>
